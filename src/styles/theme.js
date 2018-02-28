@@ -45,26 +45,26 @@ const theme = {
   },
   bottomBar: {
     colors: {
-      link: colors.bright,
-      icon: colors.firstSuperLight
+      link: colors.white,
+      icon: colors.white
     },
     backgrounds: {
-      wrapper: colors.first,
-      icon: colors.firstDark
+      wrapper: colors.grey60,
+      icon: colors.grey100
     },
     sizes: {
-      height: 44 //pixels
+      height: 30 //pixels
     }
   },
   topBar: {
     colors: {
-      logo: colors.bright,
-      logoPost: colors.first
+      logo: colors.white,
+      logoPost: colors.grey100
     },
     backgrounds: {
-      wrapper: colors.white,
-      wrapperPost: colors.white,
-      icon: colors.light
+      wrapper: colors.grey100,
+      wrapperPost: colors.grey70,
+      icon: colors.grey100
     },
     sizes: {
       height: 44 //pixels
