@@ -6,8 +6,8 @@ const theme = {
       title: colors.grey100,
       header: colors.grey100,
       subTitle: colors.grey80,
-      scrollTrack: colors.red,
-      scrollThumb: colors.red,
+      scrollTrack: colors.white,
+      scrollThumb: colors.grey40,
       linkHover: colors.grey60,
       asideItemActiveBorder: colors.accent
     },
@@ -59,7 +59,8 @@ const theme = {
   topBar: {
     colors: {
       logo: colors.white,
-      logoPost: colors.grey100
+      logoPost: colors.grey100,
+      red : 'red'
     },
     backgrounds: {
       wrapper: colors.grey100,
@@ -72,14 +73,14 @@ const theme = {
   },
   info: {
     colors: {
-      text: colors.firstDark,
-      link: colors.firstDark,
-      linkHover: colors.first,
-      btn: colors.bright
+      text: colors.white,
+      link: colors.white,
+      linkHover: colors.grey40,
+      btn: colors.grey100
     },
     backgrounds: {
-      wrapper: colors.firstLight,
-      btn: colors.accent
+      wrapper: colors.grey100,
+      btn: colors.grey40
     },
     sizes: {
       maxWidth: "40em"

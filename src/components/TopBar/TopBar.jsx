@@ -54,6 +54,22 @@ const Logo = styled.span`
         : props => props.theme.topBar.colors.logo};
   }
 `;
+const TextLogo = styled.span `
+  display: block;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0.2em 0 0 1em;
+  width: 240px;
+  color:${props =>
+          props.navigatorIsAside || 
+          !props.navigatorIsActive ?
+          props => props.theme.topBar.colors.logoPost : 
+          props => props.theme.topBar.colors.logo};
+  } 
+`;
+
+
 
 const Btn = styled.button`
   background: none;
@@ -84,14 +100,15 @@ const TopBar = props => (
     navigatorIsAside={props.navigatorIsAside}
     navigatorIsActive={props.navigatorIsActive}
   >
-    <Logo
+    {console.log(props.navigatorIsAside)}
+    <TextLogo
       navigatorIsAside={props.navigatorIsAside}
       navigatorIsActive={props.navigatorIsActive}
     >
-      <Link to="/">
-        <SVGelem svg={LOGOS.TOP} />
-      </Link>
-    </Logo>
+        travis reviews everything
+    </TextLogo>
+
+
     <Btn onClick={props.btnOnClick} aria-label="Unfold">
       <span>
         <SVGelem svg={ICONS.INFO} />
@@ -99,5 +116,16 @@ const TopBar = props => (
     </Btn>
   </Wrapper>
 );
+
+/*
+ <Logo
+ navigatorIsAside={props.navigatorIsAside}
+ navigatorIsActive={props.navigatorIsActive}
+ >
+ <Link to="/">
+ <SVGelem svg={LOGOS.TOP} />
+ </Link>
+ </Logo>
+ */
 
 export default TopBar;
