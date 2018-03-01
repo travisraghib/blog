@@ -100,7 +100,6 @@ const TopBar = props => (
     navigatorIsAside={props.navigatorIsAside}
     navigatorIsActive={props.navigatorIsActive}
   >
-    {console.log(props.navigatorIsAside)}
     <TextLogo
       navigatorIsAside={props.navigatorIsAside}
       navigatorIsActive={props.navigatorIsActive}
