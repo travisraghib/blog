@@ -1,7 +1,6 @@
 const config = require("./src/utils/siteConfig");
 
 module.exports = {
-  pathPrefix: `/blog`,
   siteMetadata: {
     title: "User Experience Notes 2",
     author: "Greg Lobinski"
