@@ -2,23 +2,23 @@ const colors = require("../styles/colors");
 
 module.exports = {
   pathPrefix: "/",
-  siteTitle: "Gatsby StyledBlog starter",
-  siteLongTitle: "Gatsby StyledBlog Theme/Starter",
-  siteUrl: "https://gsbs.greglobinski.com",
+  siteTitle: "Travis Reviews Everything",
+  siteLongTitle: "Travis Reviews Everything",
+  siteUrl: "http://www.travisreviewseverything.com/",
   siteLanguage: "en",
   siteLogo: "/logos/logo-1024.png",
-  siteDescription: "This is a starter/theme for GatsbyJS",
+  siteDescription: "Travis' personal blog",
   // manifest.json
-  manifestName: "StyledBlog Gatsby starter",
-  manifestShortName: "StyledBlog",
+  manifestName: "Travis Reviews Everything",
+  manifestShortName: "Travis Reviews Everything",
   manifestStartUrl: "/",
   manifestBackgroundColor: colors.first,
   manifestThemeColor: colors.firstLight,
   manifestDisplay: "standalone",
   // analytics
-  analyticsTrackingId: "UA-110088221-2",
+  analyticsTrackingId: "UA-115961064-1",
   // author note
-  authorName: "Mr. Gatsby",
+  authorName: "Travis",
   authorDescription: `Proin ornare ligula eu tellus tempus elementum. Aenean bibendum iaculis mi, nec blandit lacus interdum vitae. Vestibulum non nibh risus, a scelerisque purus. `,
   // texts
   copyright:

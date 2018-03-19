@@ -2,8 +2,8 @@ const config = require("./src/utils/siteConfig");
 
 module.exports = {
   siteMetadata: {
-    title: "User Experience Notes 2",
-    author: "Greg Lobinski"
+    title: "Travis Reviews Everything",
+    author: "Travis"
   },
   plugins: [
     `gatsby-transformer-sharp`,
