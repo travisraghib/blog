@@ -2,7 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import styled, { ThemeProvider } from "styled-components";
 import { connect } from "react-redux";
-import {} from "../state/store";
+import { setNavigatorIsAside, setNavigatorInTransition } from "../state/store";
 //import whatInput from "what-input";
 import Helmet from "react-helmet";
 import PostsNavigatorContainer from "../components/Navigator/PostsNavigatorContainer";

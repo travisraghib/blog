@@ -45,8 +45,8 @@ const Logo = styled.span`
   line-height: 1;
   margin: 0.2em 0 0 1em;
   text-transform: uppercase;
-  width: 240px;
-
+  width: 300px;
+  
   svg path {
     fill: ${props =>
       props.navigatorIsAside || !props.navigatorIsActive
@@ -96,35 +96,24 @@ const Btn = styled.button`
 `;
 
 const TopBar = props => (
-  <Wrapper
-    navigatorIsAside={props.navigatorIsAside}
-    navigatorIsActive={props.navigatorIsActive}
-  >
-    <TextLogo
-      navigatorIsAside={props.navigatorIsAside}
-      navigatorIsActive={props.navigatorIsActive}
+    <Wrapper
+        navigatorIsAside={props.navigatorIsAside}
+        navigatorIsActive={props.navigatorIsActive}
     >
-        travis reviews everything
-    </TextLogo>
-
-
-    <Btn onClick={props.btnOnClick} aria-label="Unfold">
+        <Logo
+            navigatorIsAside={props.navigatorIsAside}
+            navigatorIsActive={props.navigatorIsActive}
+        >
+            <Link to="/">
+                <SVGelem svg={LOGOS.TOP} />
+            </Link>
+        </Logo>
+        <Btn onClick={props.btnOnClick} aria-label="Unfold">
       <span>
         <SVGelem svg={ICONS.INFO} />
       </span>
-    </Btn>
-  </Wrapper>
+        </Btn>
+    </Wrapper>
 );
-
-/*
- <Logo
- navigatorIsAside={props.navigatorIsAside}
- navigatorIsActive={props.navigatorIsActive}
- >
- <Link to="/">
- <SVGelem svg={LOGOS.TOP} />
- </Link>
- </Logo>
- */
 
 export default TopBar;
